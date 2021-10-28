@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        //№1, №2\\
+//
 //        Scanner scanner1 = new Scanner(System.in);
 //        int a = 20;
 //        for (int i = 0; i < 21; i++) {
@@ -23,6 +26,9 @@ public class Main {
 //
 //        }
 //        System.out.println(" ");
+
+        //№3\\
+
 //        System.out.println("Create 2 4-digit passwords");
 //        Scanner scanner2 = new Scanner(System.in);
 //
@@ -65,12 +71,15 @@ public class Main {
 //                System.out.println(" ");
 //            }
 //        }
-        for(int i = 1; i <= 10; i++){
-            for(int j = 1; j <= 10; j++){
-                System.out.print(j * i + "  ");
-            }
-            System.out.println("");
-        }
+
+        //№4\\
+//
+//        for(int i = 1; i <= 10; i++){
+//            for(int j = 1; j <= 10; j++){
+//                System.out.print(j * i + "  ");
+//            }
+//            System.out.println("");
+//        }
     }
 }
 
