@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Workout {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner1 = new Scanner(System.in);
@@ -65,6 +65,6 @@ public class Workout {
                 System.out.println(" ");
             }
         }
-
     }
 }
+
