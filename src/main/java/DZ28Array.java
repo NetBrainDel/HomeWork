@@ -8,8 +8,9 @@ public class DZ28Array {
         for (int i = 0; i < K.length; i++) {
             System.out.print("|" + K[i] + "| ");
         }
-
+        System.out.print(" :Array 'K'");
         System.out.println("");
+        System.out.println("_");
 
         for (int j = 0; j < N.length; j++) {
             System.out.print("|" + N[j] + "| ");
