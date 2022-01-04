@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class ClassWork {
     public static void main(String[] args) {
@@ -33,7 +31,6 @@ public class ClassWork {
 //        System.out.println(a1);
 
 
-
 //        int[] array = {1, 4, 6, 0, 9};
 //
 //        System.out.println(Arrays.stream(array).min());
@@ -46,7 +43,6 @@ public class ClassWork {
 //        }
 
         /*1 ведите число 1 2 3 проверка ввода*/
-
 //        Scanner scanner = new Scanner(System.in);
 //
 //        int n = scanner.nextInt();
@@ -69,7 +65,6 @@ public class ClassWork {
 //        }
 
         /*2 найти количество отриц и полож числа*/
-
 //        int a = 1;
 //        int b = -2;
 //        int c = 3;
@@ -95,7 +90,6 @@ public class ClassWork {
 //        System.out.println(otr);
 
         /*3 вывести максимальный и минимальный элемент массива*/
-
 //        int[] arr= {2,3,4,5,6};
 //        int max = arr[0];
 //        int min = arr[0];
@@ -111,6 +105,44 @@ public class ClassWork {
 //        System.out.println(max);
 //        System.out.println(min);
 
+        /*Методы*/
+        /*мадификатор _ тип возвращаемого значения метода _ (параметры метода)
+        {
+        тело метода
+        }*/
+//        int a = 4;
+//        int b = 5;
+//        int result = sum(a, b);
+//        System.out.println(sum(a,b));
+//        System.out.println(search());
+//    }
+//
+//    static int sum(int a, int b){
+//        return a+b;
+//    }
+//
+//    static int search(){
+//        return 100;
+//    }
 
+       int[] array = {1,2,6,4};
+       outArray(array);
+       System.out.println(" ");
+       System.out.println(sumArray(array));
     }
+
+    static void outArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    static int sumArray(int[] array){
+        int sum= 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
 }
