@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class ClassWork {
     public static void main(String[] args) {
@@ -33,16 +31,118 @@ public class ClassWork {
 //        System.out.println(a1);
 
 
+//        int[] array = {1, 4, 6, 0, 9};
+//
+//        System.out.println(Arrays.stream(array).min());
+//
+//        for (int i = 1; i < array.length; i++) {
+//         //   System.out.println(array[i]);
+//            if (array[i] < array[i-1]) {
+//                    System.out.println(array[i]);
+//            }
+//        }
 
-        int[] array = {1, 4, 6, 0, 9};
+        /*1 ведите число 1 2 3 проверка ввода*/
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int n = scanner.nextInt();
+//
+//        switch (n){
+//            case 1:
+//                System.out.println(1);
+//                break;
+//
+//            case 2:
+//                System.out.println(2);
+//                break;
+//
+//            case 3:
+//                System.out.println(3);
+//                break;
+//
+//            default:
+//                System.out.println("ef");
+//        }
 
-        System.out.println(Arrays.stream(array).min());
+        /*2 найти количество отриц и полож числа*/
+//        int a = 1;
+//        int b = -2;
+//        int c = 3;
+//        int pol = 0;
+//        int otr = 0;
+//
+//        if (a>0){
+//            pol++;
+//        }else {
+//            otr++;
+//        }
+//        if (b>0){
+//            pol++;
+//        }else {
+//            otr++;
+//        }
+//        if (c>0){
+//            pol++;
+//        }else {
+//            otr++;
+//        }
+//        System.out.println(pol);
+//        System.out.println(otr);
 
-        for (int i = 1; i < array.length; i++) {
-         //   System.out.println(array[i]);
-            if (array[i] < array[i-1]) {
-                    System.out.println(array[i]);
-            }
+        /*3 вывести максимальный и минимальный элемент массива*/
+//        int[] arr= {2,3,4,5,6};
+//        int max = arr[0];
+//        int min = arr[0];
+//
+//        for (int i = 1; i < arr.length; i++) {
+//            if (max < arr[i]){
+//                max = arr[i];
+//            }
+//            if (min > arr[i]){
+//                min = arr[i];
+//            }
+//        }
+//        System.out.println(max);
+//        System.out.println(min);
+
+        /*Методы*/
+        /*мадификатор _ тип возвращаемого значения метода _ (параметры метода)
+        {
+        тело метода
+        }*/
+//        int a = 4;
+//        int b = 5;
+//        int result = sum(a, b);
+//        System.out.println(sum(a,b));
+//        System.out.println(search());
+//    }
+//
+//    static int sum(int a, int b){
+//        return a+b;
+//    }
+//
+//    static int search(){
+//        return 100;
+//    }
+
+       int[] array = {1,2,6,4};
+       outArray(array);
+       System.out.println(" ");
+       System.out.println(sumArray(array));
+    }
+
+    static void outArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
     }
+
+    static int sumArray(int[] array){
+        int sum= 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
 }
