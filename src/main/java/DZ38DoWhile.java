@@ -7,14 +7,14 @@ public class DZ38DoWhile {
 //            System.out.println(array[i]);
 
             do {
-
-            }
-            while (array[i] == 0);{
                 n++;
-                System.out.println(array[i]);
             }
-            System.out.println("Колличество чисел в набиоре: "+n);
+            while (array[i] == 0);
+
+            System.out.println(array[i]);
+            System.out.println("Колличество чисел в наборе: " + n);
         }
+
     }
 }
 
