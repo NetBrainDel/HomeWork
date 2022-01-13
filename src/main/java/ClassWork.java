@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class ClassWork {
     public static void main(String[] args) {
 /*
@@ -129,13 +127,16 @@ public class ClassWork {
        outArray(array);
        System.out.println(" ");
        System.out.println(sumArray(array));
+
     }
+
 
     static void outArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
     }
+
 
     static int sumArray(int[] array){
         int sum= 0;
