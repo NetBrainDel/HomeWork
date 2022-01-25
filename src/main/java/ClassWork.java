@@ -1,5 +1,27 @@
 public class ClassWork {
+
+
     public static void main(String[] args) {
+
+        /*OOP*/
+
+        ClassWorkOOP classWorkOOP1 = new ClassWorkOOP();
+        ClassWorkOOP classWorkOOP2 = new ClassWorkOOP("farqw", 32, 'M');
+
+        classWorkOOP1.name = "Nik";
+        classWorkOOP1.age = 45;
+        classWorkOOP1.sex = 'm';
+
+        classWorkOOP1.getInfo();
+        System.out.println(" ");
+
+
+//        classWorkOOP2.name = "#$$#";
+//        classWorkOOP2.age = 30;
+//        classWorkOOP2.sex = 'F';
+
+        classWorkOOP2.getInfo();
+        /*OOP*/
 /*
           условие ? если вывполняется : если не выполняется
 */
@@ -142,14 +164,27 @@ public class ClassWork {
         /*STRING*/
         /*Методы*/
 
-
+/*
+        String string = "Hello World";
+        System.out.printf(sim(string));
+*/
 
         /*Main method*/
     }
 
-
     /*Методы*/
     /*STRING*/
+/*
+    static String sim(String revers) {
+        String str = "";
+
+        for (int i = 0; i<revers.length(); i++) {
+            str = revers.charAt(i)+str;
+        }
+        return str;
+    }
+*/
+
 /*    static String minElement(String inputString) {
         String[] words = inputString.split(" ");
         String wordMin = words[0];
@@ -202,7 +237,13 @@ public class ClassWork {
 //        return sum;
 //    }
     /*Методы*/
+
+
+
+
     /*Методы*/
+
+
 
     /*Class*/
 }
