@@ -12,11 +12,11 @@ public class DZ51Methods {
             ar_num[i] = scanner.nextInt();
         }
 
-        InvDigits(ar_num);
+        invDigits(ar_num);
 
     }
 
-    static void InvDigits(int[] K) {
+    static void invDigits(int[] K) {
         for (int i = K.length - 1; i >= 0; i--) {
             System.out.print("|" + K[i] + "|");
         }

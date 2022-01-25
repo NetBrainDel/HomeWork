@@ -103,11 +103,12 @@ public class ClassWork {
 //        System.out.println(max);
 //        System.out.println(min);
 
+
+
         /*Методы*/
-        /*мадификатор _ тип возвращаемого значения метода _ (параметры метода)
-        {
-        тело метода
-        }*/
+        /*Методы*/
+        /*мадификатор _ тип возвращаемого значения метода _ имя _ (параметры метода){тело метода}*/
+
 //        int a = 4;
 //        int b = 5;
 //        int result = sum(a, b);
@@ -123,27 +124,85 @@ public class ClassWork {
 //        return 100;
 //    }
 
-       int[] array = {1,2,6,4};
-       outArray(array);
-       System.out.println(" ");
-       System.out.println(sumArray(array));
+//       int[] array = {1,2,6,4};
+//       outArray(array);
+//       System.out.println(" ");
+//       System.out.println(sumArray(array));
 
+//        vaTest(1);                     // 1 аргумент
+//        vaTest(1, 2, 3);               // 3 аргумента
+//        vaTest(5,6,7,8,9,0,0);         // без аргументов
+        /*Методы*/
+
+
+        /*STRING*/
+/*        String string = "habfahb jvnjfnvjfnv ojeqfoenvjnfevejan kljbkb jjnkjn";
+        System.out.println(minElement(string));
+        System.out.println(maxElement(string));*/
+        /*STRING*/
+        /*Методы*/
+
+
+
+        /*Main method*/
     }
 
 
-    static void outArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+    /*Методы*/
+    /*STRING*/
+/*    static String minElement(String inputString) {
+        String[] words = inputString.split(" ");
+        String wordMin = words[0];
+        for (String str : words) {
+            if (str.length() < wordMin.length()){
+                wordMin = str;
+            }
         }
+        return wordMin;
     }
 
-
-    static int sumArray(int[] array){
-        int sum= 0;
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+    static String maxElement(String inputString) {
+        String[] words = inputString.split(" ");
+        String wordMax = words[0];
+        for (String str : words) {
+            if (str.length() > wordMax.length()){
+                wordMax = str;
+            }
         }
-        return sum;
-    }
+        return wordMax;
+    }*/
+    /*STRING*/
 
+
+
+    /*Методы*/
+//    static void vaTest(int ... v) {
+//        System.out.println("Число аргументов: " + v.length);
+//        System.out.println("Содержимое: ");
+//
+//        for (int i = 0; i < v.length; i++) {
+//            System.out.println(" arg " + i + ": " + v[i]);
+//        }
+//        System.out.println();
+//    }
+
+//
+//    static void outArray(int[] array) {
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.println(array[i]);
+//        }
+//    }
+//
+//
+//    static int sumArray(int[] array){
+//        int sum= 0;
+//        for (int i = 0; i < array.length; i++) {
+//            sum += array[i];
+//        }
+//        return sum;
+//    }
+    /*Методы*/
+    /*Методы*/
+
+    /*Class*/
 }
