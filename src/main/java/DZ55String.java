@@ -7,7 +7,6 @@ public class DZ55String {
 
         System.out.println(revers(str1));
     }
-
     public static String revers(String str2) {
         String result = "";
         for (int i = 0; i < str2.length(); i++) {
