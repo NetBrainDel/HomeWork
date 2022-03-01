@@ -1,26 +1,134 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+
 public class ClassWork {
+
+    static void addColor(String str, ArrayList<String> arrayList) {
+        arrayList.add(0,str);
+        System.out.println(arrayList);
+    }
+
+    static void deleteColor (ArrayList<String>arrayList){
+        arrayList.remove(0);
+        System.out.println(arrayList);
+    }
+
+    static void upDateColor(String str, ArrayList<String>arrayList){
+        arrayList.set(0, str);
+        System.out.println(arrayList);
+    }
+
+    static void rapidCollection(ArrayList<String>arrayList){
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i)+"_"+i);
+        }
+    }
+
+    static void deleteIndexCollection(ArrayList<String>arrayList){
+        arrayList.remove(2);
+        System.out.println(arrayList);
+    }
+
+    static void sortIndex(ArrayList<String>arrayList, int number){
+        System.out.println(arrayList.get(number)+"_");
+    }
+
+    static void sortCollection(ArrayList<String>arrayList){
+        Collections.sort(arrayList);
+        System.out.println(arrayList);
+    }
+
+    static void sortCollections(ArrayList<Integer> arrayList){
+        Collections.sort(arrayList);
+        System.out.println(arrayList+"_________");
+    }
 
 
     public static void main(String[] args) {
 
+        ArrayList<Integer>arrayList1 = new ArrayList<>();
+        arrayList1.add(3);
+        arrayList1.add(1);
+        arrayList1.add(2);
+        arrayList1.add(10);
+        arrayList1.add(6);
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("red");
+        arrayList.add("yellow");
+        arrayList.add("blue");
+
+        addColor("fire", arrayList );
+        deleteColor(arrayList);
+        upDateColor("blue", arrayList);
+        rapidCollection(arrayList);
+        deleteIndexCollection(arrayList);
+        sortIndex(arrayList, 0);
+        sortCollection(arrayList);
+        sortCollections(arrayList1);
+                                                          /*Поля
+                                                          * конструкторы
+                                                          * методы(разные,доп)
+                                                          * гед сет*/
+
+            Teacher teacher = new Teacher(60, "Anne");
+            Teacher teacher1 = new Teacher(62, "Bill");
+            Teacher teacher2 = new Teacher(50, "Jack");
+            Teacher teacher3 = new Teacher(50, "Nick");
+            LinkedList<Teacher> oldTeachers = new LinkedList<>();
+            oldTeachers.add(teacher);
+            oldTeachers.add(teacher1);
+            oldTeachers.add(teacher2);
+            oldTeachers.add(teacher3);
+            for (int i = 0; i < oldTeachers.size(); i++) {
+                if (oldTeachers.get(i).getAge() >= 60) {
+                    System.out.println("Уволен " + oldTeachers.get(i));
+                    oldTeachers.remove(i);
+                    i = -1;
+                }
+            }
+
+
+
+
+
+
+        /*Collections (add, remove)*/
+        /*Queue(Очередь)первый зашел первый вышел*/
+        /*Stack последний зашел парвый вышел*/
+
+        /*интерфейс без методов называется МАРКЕРНЫЙ*/
+        /*интерфейс с одним методом называется ФУНКЦИОНАЛЬНЫЙ*/
+
+
+        /*Коллекция*/
+        /*Iterable(базовый интерфейс)*/
+
+        /*в нем один метод ИТЕРАТОР()(необходим для перемещения по коллекции)*/
+
+        /*Iterable*/
+        /*Коллекция*/
+
         /*OOP*/
 
-        ClassWorkOOP classWorkOOP1 = new ClassWorkOOP();
-        ClassWorkOOP classWorkOOP2 = new ClassWorkOOP("farqw", 32, 'M');
-
-        classWorkOOP1.name = "Nik";
-        classWorkOOP1.age = 45;
-        classWorkOOP1.sex = 'm';
-
-        classWorkOOP1.getInfo();
-        System.out.println(" ");
+//        ClassWorkOOP classWorkOOP1 = new ClassWorkOOP();
+//        ClassWorkOOP classWorkOOP2 = new ClassWorkOOP("farqw", 32, 'M');
+//
+//        classWorkOOP1.name = "Nik";
+//        classWorkOOP1.age = 45;
+//        classWorkOOP1.sex = 'm';
+//
+//        classWorkOOP1.getInfo();
+//        System.out.println(" ");
 
 
 //        classWorkOOP2.name = "#$$#";
 //        classWorkOOP2.age = 30;
 //        classWorkOOP2.sex = 'F';
 
-        classWorkOOP2.getInfo();
+//        classWorkOOP2.getInfo();
         /*OOP*/
 /*
           условие ? если вывполняется : если не выполняется
@@ -169,8 +277,11 @@ public class ClassWork {
         System.out.printf(sim(string));
 */
 
+
+
         /*Main method*/
     }
+
 
     /*Методы*/
     /*STRING*/
